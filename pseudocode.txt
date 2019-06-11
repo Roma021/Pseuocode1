@@ -1,0 +1,109 @@
+1)
+
+VARIABLES:
+integer intScoreInput
+integer intScoreCount
+integer intMaxCount
+double  dAverageScore
+ALGORITHM:
+DEFINE intScoreInput     input value
+DEFINE intScoreCount     counter loop
+DEFINE dAverageScore     average result
+DEFINE intMaxCount       maximum inputs
+
+SET intCount = 1    initial value
+SET intTotal = 0    initial value
+SET intMaxCount = 10     maximum inputs
+
+If intScoreCount is less than 11 (ask user to input)
+    ask user for input
+    add the input to the total
+    
+END
+
+SET dAverageScore = intTotal / intMax to calculate the average of the 10 values
+PRINT the average is dAverageScore
+
+PSEUDOCODE:
+
+DO
+    DEFINE integer intScoreInput
+    DEFINE integer intScoreCount
+    DEFINE integer intMaxCount
+    DEFINE float    dAverageScore
+    SET intScoreCount = 1
+    SET intTotal = 0
+    SET intMax = 10
+    WHILE intCount < intMax + 1
+        display "please enter exam score" = intCount
+        intInput = INPUT
+        intTotal = intTotal + intScoreInput
+        intCount = intScoreCount + 1
+    END
+    dAverageScore = intTotal / intMax
+    PRINT "the average exam score is " = dAverageScore
+END
+
+
+
+
+2)
+Variables:
+integer inputRoofLength
+integer inchLength
+integer inputRoofWidth
+integer inchWidth
+integer inputRainfall
+integer gallons
+double dRunoff
+
+Algorithm:
+define integer inputRoofLength as input length of roof in feet
+define integer inchLength as length of roof in inches
+define integer inputRoofWidth as input width of roof in feet
+define integer inchWidth for width of roof of roof in inches
+define integer gallons as a constant
+define double  dRunoff  consists of reults
+
+set gallons=231
+
+display "input length of Roof"
+set inputRoofLength to input
+display "input width of Roof"
+set inputRoofWidth to input
+display "input amount of rainfall"
+set inputRainfall to input
+set inchLength = inputRoofLength * 12
+set inchWidth = inputRoofWidth * 12
+set intRunoffGallons = (inchLength * inchWidth * inchRainfall) / gallons
+display The runoff is intRunoffGallons gallons
+
+
+
+PSEUDOCODE:
+
+Do
+    Define integer inputRoofLength
+    Define integer inchRoofLength
+    Define integer inputRoofWidth
+    Define integer inchWidth
+    Define integer inputRainfall
+    Define integer inputgallon
+    Define integer intRunoffGallons
+
+    gallon = 231
+    PRINT "input length of roof"
+    inputRoofLength = INPUT
+    PRINT "enter width of house"
+    inputRoofWidth = INPUT
+    PRINT "enter amount of rainfall"
+    inputRainfall = INPUT
+
+    inchLength = inputRoofLength * 12
+    inchWidth = inputRoofWidth * 12
+    intRunoffGallons = (inchLength * inchWidth * inchRainfall) / gallon
+
+    PRINT "The runoff is " + intRunoffGallons + "gallons"
+END
+
+
