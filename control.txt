@@ -1,0 +1,128 @@
+1)
+The program should be structured to compute the sales tax and the total amount due,and display the customer’s name, purchase amount, sales tax and total amount due.
+Display "Enter the customer's name"
+Input:
+customerName
+purchaseAmount
+taxCode
+
+Output:
+customerName
+purchaseAmount
+salsTax
+totalAmountDue
+
+Processing steps:
+Print customerName, purchaseAmount, taxCode
+If taxCode = 0 then
+	taxCode_percent = 0
+else if taxCode = 1 then
+	taxCode_percent = .03
+else if taxCode = 2 then
+	taxCode_percent = .05
+else if taxCode = 3
+	then taxCode_percent = .07
+	
+taxAmountDue = purchaseAmout * (taxCode_percent/100)
+totalAmountDue = purchaseAmount + taxDue
+
+display customerName, purchaseAmout, taxDue, totalAmountDue
+
+Pseuocode:
+Set salesTax to zero
+Set totalAmountDue to zero
+Prompt user for customerName
+Get customerName
+Prompt user for purchaseAmount
+Get purchaseAmount
+Prompt user for taxCode
+Get taxCode
+
+IF taxCode == 0 
+	Set salesTax = 0
+	Set totalAmountDue = purchaseAmount
+	Display customerName, purchaseAmount, salesTax, and totalAmountDue
+ELSE IF taxCode == 1
+	Calculate salesTax = purchaseAmount * .03
+	Calculate totalAmountDue = purchaseAmount + salesTax
+	Display customerName, purchaseAmount, salesTax, and totalAmountDue
+ELSE IF taxCode == 2
+	Calculate salesTax = purchaseAmount * .05
+	Calculate totalAmountDue = purchaseAmount + salesTax
+	Display customerName, purchaseAmount, salesTax, and totalAmountDue
+ELSE IF taxCode == 3
+	Calculate salesTax = purchaseAmount * .07
+	Calculate totalAmountDue = purchaseAmount + salesTax
+	Display customerName, purchaseAmount, salesTax, and totalAmountDue
+ENDIF	
+
+
+Tests
+customerName = Dave Max, purchaseAmount = 320, taxCode = 0
+output should be Amy Ramirez, $320, $0, $320
+salesTax = 0
+totalAmountDue = 320
+
+customerName = Mike Smith, purchaseAmount = 245, taxCode = 2
+output should be Steven Johnson, $245, $12.25, $257.25
+salesTax = 245 * 0.05 = 12.25
+totalAmountDue = 245 + 12.25 = 257.25
+
+2)
+
+Input:
+employeeNameNumber
+payRate
+numberOfHour
+
+Output:
+employeeNameNumber
+payRate
+totalHourWorked
+weeklyPay
+
+PROCESSING STEPS
+
+if numberOfHour > 60 or PayRate > 25
+then print employeeNameNumber
+           payRate
+		   totalHourWorked
+	print "try again"
+
+else if numberOfHour <= 35
+    weeklyPay = totalHourWorked * payRate
+	
+else if numberOfHour > 35
+		overTime = numberOfHour - 35
+		weeklyPay =  (payRate * 35) + (overTime * payRate * 1.5)
+
+Print 
+employeeNameNumber
+payRate
+totalHourWorked
+weeklyPay		
+
+PSEUDOCODE
+Initialize weeklyPay to zero
+Prompt user for employeeNameNumber
+Get employeeNameNumber
+Prompt user for payRate
+Get payRate
+Prompt user for totalHourWorked
+Get totalHourWorked
+IF totalHourWorked <= 60 AND payRate <= 25
+	IF totalHourWorked <= 35 
+		Calculate weeklyPay = totalHourWorked * payRate
+		Display employeeNameNumber, payRate, totalHourWorked, and weeklyPay
+	ELSE
+		Calculate weeklyPay = (35 * payRate) + (totalHourWorked - 35) * payRate * 1.5)
+		Display employeeNameNumber, payRate, totalHourWorked, and weeklyPay
+	ENDIF
+ELSE IF totalHourWorked > 60
+	Error exceeded maximum hours
+ELSE IF payRate > 25
+	Error exceeded pay rate
+ENDIF
+
+
+
