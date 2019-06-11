@@ -1,11 +1,11 @@
 1)
 
-VARIABLES:
+Variables:
 integer intScoreInput
 integer intScoreCount
 integer intMaxCount
 double  dAverageScore
-ALGORITHM:
+Algorithm:
 DEFINE intScoreInput     input value
 DEFINE intScoreCount     counter loop
 DEFINE dAverageScore     average result
@@ -24,7 +24,7 @@ END
 SET dAverageScore = intTotal / intMax to calculate the average of the 10 values
 PRINT the average is dAverageScore
 
-PSEUDOCODE:
+Pseudocode:
 
 DO
     DEFINE integer intScoreInput
@@ -80,7 +80,7 @@ display The runoff is intRunoffGallons gallons
 
 
 
-PSEUDOCODE:
+Psueocode:
 
 Do
     Define integer inputRoofLength
