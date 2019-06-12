@@ -1,0 +1,16 @@
+Subway Algorithm:
+1) Walk to the nearest exit
+2) Turn left
+3) Turn right at the first intersection
+4) Walk up to the elevator 
+5) Enter the elevator
+6) Press the first floor button
+7) Exit the elevator 
+8) Turn left
+9) Exit glass door
+10) Walk down the stairs 
+11) Exit the building
+12) Cross the street
+13) Turn left 
+14) Continue straight down the sidewalk 
+15) Subway will be on your right
